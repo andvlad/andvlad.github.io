@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+    <meta content='true' name='HandheldFriendly'/>
+    <meta content='width' name='MobileOptimized'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+    <title>Code Practice</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div class="top">
+      <div class="reg">
+        <a href="#win1">Вход</a>
+        <a href="#win2">Регистрация</a>
+      </div>
+      <a href="#x" class="overlay" id="win1"></a>
+      <div class="popup">
+      <div class="tabs">
+        <input id="tab1" type="radio" name="tabs" checked>
+        <label for="tab1" title="Вкладка 1">Вход</label>
+ 
+        <input id="tab2" type="radio" name="tabs">
+        <label for="tab2" title="Вкладка 2">Регистрация</label>
+ 
+        <section id="content-tab1">
+          <p>
+            <div id="form_auth">
+              <h2>Форма авторизации</h2>
+              <form action="auth.php" method="post" name="login">
+                <table>
+          
+                  <tbody>
+                    <tr>
+                      <td> Логин: </td>
+                      <td>
+                        <input name="login" required="required" type="text"><br>
+                        <span id="valid_email_message" class="mesage_error"></span>
+                      </td>
+                    </tr>
+          
+                    <tr>
+                      <td> Пароль: </td>
+                      <td>
+                        <input name="password" placeholder="минимум 6 символов" required="required" type="password"><br>
+                        <span id="valid_password_message" class="mesage_error"></span>
+                      </td>
+                    </tr>
+                 
+                    <tr>
+                      <td colspan="2">
+                        <input name="btn_submit_auth" value="Войти" type="submit">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+          </p>
+        </section>
+
+        <section id="content-tab2">
+          <p>
+            <div id="form_register">
+              <h2>Форма регистрации</h2>
+                <form action="post_reg.php" method="post" name="register">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td> Логин: </td>
+                        <td>
+                          <input name="login" required="required" type="text">
+                        </td>
+                      </tr>
+              
+                      <tr>
+                        <td> E-mail: </td>
+                        <td>
+                          <input name="email" required="required" type="email"><br>
+                          <span id="valid_email_message" class="mesage_error"></span>
+                        </td>
+                      </tr>
+              
+                      <tr>
+                        <td> Пароль: </td>
+                        <td>
+                          <input name="password" placeholder="минимум 6 символов" required="required" type="password"><br>
+                          <span id="valid_password_message" class="mesage_error"></span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="2">
+                          <input name="btn_submit_register" value="Зарегистрироватся" type="submit">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </form>
+            </div>
+          </p>
+        </section>   
+      </div>
+
+      <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+
+<!--<a href="#0" class="overlay" id="win2"></a>
+<div class="popup">
+  <div class="tabs">
+      <input id="tab3" type="radio" name="tabs">
+      <label for="tab3" title="Вкладка 1">Вход</label>
+ 
+      <input id="tab4" type="radio" name="tabs" checked>
+      <label for="tab4" title="Вкладка 2">Регистрация</label>
+ 
+      <section id="content-tab3">
+          <p>
+      <?php require("login.php"); ?>
+          </p>
+      </section>  
+      <section id="content-tab4">
+          <p>
+            <?php require("register.php"); ?>
+          </p>
+      </section>   
+  </div>
+  <a class="close" title="Закрыть" href="#close"></a>
+</div>-->
+
+    <div class="top">
+      <p id="toptext">Web-разработка</p>
+    </div>
+
+    <div class="mainmenu">
+      <a href="index.php">Главная</a>
+      <a href="index.php">Формы</a>
+      <a href="index.php">Медиа</a>
+      <a href="index.php">Инфо</a>
+      <a href="index.php">Метод</a>
+    </div>
+
+  <div class="container">
+    <div class="info">
+      <div class="text">
+        <p>HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами; полученный в результате интерпретации форматированный текст отображается на экране монитора компьютера или мобильного устройства.</p>
+        <p>Язык HTML до 5-й версии определялся как приложение SGML (стандартного обобщённого языка разметки по стандарту ISO 8879). Спецификации HTML5 формулируются в терминах DOM (объектной модели документа).</p>
+        <p>Язык XHTML является более строгим вариантом HTML, он следует синтаксису XML и является приложением языка XML в области разметки гипертекста.</p>
+        <p>Во всемирной паутине HTML-страницы, как правило, передаются браузерам от сервера по протоколам HTTP или HTTPS, в виде простого текста или с использованием шифрования.</p>
+
+      <a href="https://ru.wikipedia.org/wiki/HTML">Wikipedia</a>
+      </div>
+      <div class="text">
+        <p>CSS (/siːɛsɛs/ англ. Cascading Style Sheets — каскадные таблицы стилей) — формальный язык описания внешнего вида документа, написанного с использованием языка разметки.</p>
+        <p>Преимущественно используется как средство описания, оформления внешнего вида веб-страниц, написанных с помощью языков разметки HTML и XHTML, но может также применяться к любым XML-документам, например, к SVG или XUL.</p>
+
+      <a href="https://ru.wikipedia.org/wiki/CSS">Wikipedia</a>
+      </div>
+    </div>
+
+    <div class="sidebar">
+    <form name="action" method="post" action="#">
+      <p>Вопрос:</p>
+      <p><textarea name="feedback" cols="40" rows="8">Введите здесь ваш вопрос</textarea></p>
+      <p>Важность вопроса:<p>
+        <select>
+          <option>Очень важный</option>
+          <option>Средний</option>
+          <option>Обычный</option>
+        </select>
+      <input type="radio" name="Идентификатор в глазах обработчика, например, возраст, пол" value="Значение, которое будет отправлено">
+      <input type="checkbox"  name="Идентификатор в глазах обработчика" value="Значение, которое будет отправлено">
+      <input type="radio" name="answer" value="yes" checked>
+      <label><input type="checkbox" name="document" value="yes">Я прочитал соглашение</label>
+      <p><input type="submit" value="Отправить"></p>
+      <input type="reset" value="Очистить">
+      <button class="btn-1">Button 1</button>
+      <section><button class='dotted thick'>Dotted Thick</button></section>
+    </form>
+    </div>
+  </div>
+
+    <script src="js/ontop.js"></script>
+    <div class="top">
+      <p id="bottomtext">© Андрюшин В.О., 2018</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700,700i&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Kurale&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Forum');
+@import url("buttons.css");
+@import url("style_popup.css");
+@import url("ontop.css");
+
+.top {
+	background: #34495E;
+	height: 25vh;
+	width: 100%;
+}
+#toptext {
+	font: bold 8vh 'Alegreya Sans';
+	color: #F5FFFA;
+	text-align: center;
+ 	padding-top: 10vh;
+ 	margin-top: 0px;
+}
+#bottomtext {
+	font: 2vh 'Forum';
+	color: #F5FFFA;
+	text-align: center;
+ 	padding-top: 10vh;
+ 	margin-top: 0px;
+}
+.reg > a {
+	float: left;
+	font: 2vh 'Forum';
+	color: #F5FFFA;
+	text-align: center;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.reg a:first-child {
+	padding: 1em;
+	margin: 1% 5% 0 40%
+}
+.reg a:last-child {
+	padding: 1em;
+	margin: 1% 0 0 0
+}
+.reg a:hover {
+	box-shadow: inset 0 0 0 0.1em #F5FFFA;
+	border-radius: 0.5em;
+	box-sizing: border-box;
+	transition-property: border-radius;
+    transition-duration: 0s;
+}
+.mainmenu > a {
+	background: #34495E;
+	float: left;
+	height: 6vh;
+	width: 20%;
+	transition: 0.3s;
+}
+.mainmenu > a {
+	font: 3vh 'Forum';
+	color: #F5FFFA;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 15px;
+}
+.mainmenu a:first-child {
+	border-radius: 0 0 0 1.5vh;
+}
+.mainmenu a:last-child {
+	border-radius: 0 0 1.5vh 0;
+}
+.mainmenu a:hover {
+	border-radius: 0 0 1.5vh 1.5vh;
+	box-shadow: 0 0.5em 0.5em grey
+}
+.mainmenu:hover a:not(:hover) {
+	background-color: white;
+	color: #3A539B
+}
+.mainmenu a:active {
+	color: #3A539B;
+	background-color: white;
+}
+.sidebar {
+	font: 20px 'Kurale';
+	border-left: 1px groove black;
+	box-sizing: border-box;
+	width: 30%;
+	padding: 0 10% 0 5%;
+}
+.info {
+	font: 20px 'Kurale';
+	float: left;
+	width: 40%;
+	padding: 0 5% 0 10%
+}
+.container {
+	display: table;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10% 0 10% 0;
+}
+.container > div,
+.container > noindex > div {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+    box-sizing: border-box;
+}
+.container > .sidebar,
+.container > noindex > .sidebar {
+    max-width: 30%;
+    min-width: 30%;
+    width: 30%;
+    overflow: hidden;
+}
+.text p:first-child::first-letter {
+	font: 100px 'Lobster';
+	float: left;
+}
+.text p:not(:first-child) {
+	text-indent: 50px;
+}
