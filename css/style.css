@@ -6,6 +6,7 @@
 @import url("buttons.css");
 @import url("style_popup.css");
 @import url("ontop.css");
+@import url("sidemenu.css");
 
 .top {
 	background: #34495E;
@@ -16,6 +17,7 @@
 	font: bold 8vh 'Alegreya Sans';
 	color: #F5FFFA;
 	text-align: center;
+	letter-spacing: 1vw;
  	padding-top: 10vh;
  	margin-top: 0px;
 }
@@ -83,9 +85,11 @@
 }
 .sidebar {
 	font: 20px 'Kurale';
-	border-left: 1px groove black;
+	border-left: 1px groove grey;
 	box-sizing: border-box;
 	width: 30%;
+}
+.sidebar > form {
 	padding: 0 10% 0 5%;
 }
 .info {
