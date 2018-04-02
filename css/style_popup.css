@@ -241,7 +241,7 @@
 }
 .cd-form input[type=password] {
   /* пространство для кнопки Скрыть */
-  padding-right: 65px;
+  padding-right: 2em;
 }
 .cd-form .hide-password {
   display: inline-block;
