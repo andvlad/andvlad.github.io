@@ -10,8 +10,10 @@
 @import url("contact.css");
 
 .top {
-	background: #34495E;
-	height: 25vh;
+	left: 0;
+	right: 0;
+	background: linear-gradient(to top, #344969, #34495E);
+	height: 20vh;
 	width: 100%;
 }
 #toptext {
@@ -19,11 +21,13 @@
 	color: #F5FFFA;
 	text-align: center;
 	letter-spacing: 1vw;
- 	padding-top: 10vh;
+	transform: translate(0, 50%);
+ 	vertical-align: middle;
  	margin-top: 0px;
 }
 .bottom {
-	background: #34495E;
+	bottom: 0;
+	background: linear-gradient(to bottom, #344969, #34495E);
 	height: auto;
 	width: 100%;
 }
@@ -36,6 +40,15 @@
  	padding: 1vw 1vw 1vw 1vw;
  	margin: 15vh 0 0 30vw;
 }
+.reg {
+	top: 0;
+	left: 0;
+	background-color: #34495E;
+	height: 5vh;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
 .reg > a {
 	float: left;
 	font: 2vh 'Forum';
@@ -45,12 +58,12 @@
 	transition: 0.3s;
 }
 .reg a:first-child {
-	padding: 1em;
-	margin: 1% 5% 0 40%
+	padding: 1vh;
+	margin: .5vh 5% 0 40%
 }
 .reg a:last-child {
-	padding: 1em;
-	margin: 1% 0 0 0
+	padding: 1vh;
+	margin: .5vh 0 0 0
 }
 .reg a:hover {
 	box-shadow: inset 0 0 0 0.1em #F5FFFA;
@@ -60,7 +73,7 @@
     transition-duration: 0s;
 }
 .mainmenu > a {
-	background: #34495E;
+	background: #344969;
 	float: left;
 	height: 6vh;
 	width: 20%;
