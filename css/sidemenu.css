@@ -180,14 +180,14 @@ div.msg, ul li i:before, ul li i:after {
 /* миниатюра слева */
  .msg img.img-left {
     width: 25%;
-    float:left;
-    margin:5px 15px 5px 0;
+    float: left;
+    margin: 5px 15px 5px 0;
 }
 /* миниатюра справа */
 .msg img.img-right {
     width: 25%;
-    float:right;
-    margin:5px 0 5px 15px;
+    float: right;
+    margin: 5px 0 5px 15px;
 }
  
 /* Встраиваемое видео */
