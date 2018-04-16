@@ -86,7 +86,7 @@
 }
 .close:before {
     color: rgba(0, 0, 0, 0.9);
-    content: "X";
+    content: '\2715';
     text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
     font-size: 12px;
     opacity: .5;
