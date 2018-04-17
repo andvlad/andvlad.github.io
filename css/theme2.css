@@ -1,0 +1,30 @@
+@import url("style.css");
+
+.top {
+	background: linear-gradient(to top, green, green);
+}
+
+.bottom {
+	background: linear-gradient(to bottom, green, green);
+}
+.ref {
+ background-image: linear-gradient(to left,transparent,transparent 50%, green 50%, green);
+ border-bottom: 2px solid green green;
+}
+.ref:visited:hover {
+	border-color: green;
+}
+.reg {
+	background-color: green;
+}
+.mainmenu > a {
+	background: green;
+}
+.mainmenu:hover a:not(:hover) {
+	background-color: white;
+	color: green
+}
+.mainmenu a:active {
+	color: green;
+	background-color: white;
+}

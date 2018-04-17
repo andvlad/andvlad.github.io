@@ -1,0 +1,69 @@
+/* Container for 2 child elements (button & filename) */
+.fileUpload {
+    background: #fff;
+    border: 0;
+    display: block;
+    margin: 2% 0 5% 0;
+    width: 100%;
+    /* border radius */
+    -o-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+/* The button */
+.fileUpload .fileBtn {
+    background: #2C88D6;
+    cursor: pointer;
+    float: left;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 3% 0;
+    text-align: center;
+    width: 33%;
+    /* border radius */
+    -o-border-radius: 6px 0 0 6px;
+    -moz-border-radius: 6px 0 0 6px;
+    -webkit-border-radius: 6px 0 0 6px;
+    border-radius: 6px 0 0 6px;
+}
+.fileUpload .fileBtn:hover {
+    background: #2C4356;
+}
+/* Where the input-name will be filled in */
+.fileUpload .fileName {
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 67%;
+    text-align: center;
+    color: #000;
+    padding: 3% 0;
+}
+/* Animation (hover) */
+.fileUpload .fileBtn:hover {
+    -webkit-transition-property: background;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-property: background;
+    -moz-transition-duration: 0.4s;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-property: background;
+    -o-transition-duration: 0.4s;
+    -o-transition-timing-function: ease-in;
+    -ms-transition-property: background;
+    -ms-transition-duration: 0.4s;
+    -ms-transition-timing-function: ease-in;
+    transition-property: background;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+}
+/* Clear input-parent, due to child-floats */
+.fileUpload:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}

@@ -7,12 +7,12 @@
     <meta content='width' name='MobileOptimized'/>
     <meta content='yes' name='apple-mobile-web-app-capable'/>
     <title>Code Practice</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" id="theme" href="css/style.css">
     <link rel="icon" href=​"images/favicon.png" type="image/png" sizes="32x32">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-    <script src="js/mobilyslider.js" type="text/javascript"></script>
-    <script src="js/init.js" type="text/javascript"></script>
+    <script src="js/mobilyslider.js"></script>
+    <script src="js/init.js"></script>
   </head>
 
   <body>
@@ -35,8 +35,14 @@
       </nav>
     
       <div class="reg">
+
         <a href="#win1">Вход</a>
         <a href="#win2">Регистрация</a>
+
+        <form>
+          <input placeholder="Поиск" type="search">
+        </form>
+
       </div>
       <a href="#x" class="overlay" id="win1"></a>
       <div class="popup">
@@ -250,6 +256,14 @@
   </a>
 
     <div class="info">
+
+      <ul id="breadcrumbs-one">
+        <li><a href="">Code Practice</a></li>
+        <li><a href="">Скрипты</a></li>
+        <li><a href="">Меню и навигация</a></li>
+        <li><a href="" class="current">HTML</a></li>
+      </ul> 
+
       <div class="text">
         <a href="#img7"><img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" class="img-right" alt="Логотип HTML5"></a>
         <a href="#close" class="lightbox" id="img7"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"></a>
