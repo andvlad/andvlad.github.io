@@ -11,6 +11,8 @@
     <link rel="icon" href=​"images/favicon.png" type="image/png" sizes="32x32">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <script src="js/mobilyslider.js" type="text/javascript"></script>
+    <script src="js/init.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -18,8 +20,8 @@
     <input type="checkbox" id="nav-toggle" hidden>
       <nav class="nav">
         <label for="nav-toggle" class="nav-toggle" onclick></label>
-          <h2 class="logo"> 
-            <a href="//dbmast.ru/">Slide Menu</a> 
+          <h2 class="logo">
+            <a href="//dbmast.ru/">Slide Menu</a>
           </h2>
         <ul>
           <li><a href="#1">Один</a>
@@ -28,9 +30,9 @@
           <li><a href="#4">Четыре</a>
           <li><a href="#5">Пять</a>
           <li><a href="#6">Шесть</a>
-          <li><a href="#7">Семь</a> 
+          <li><a href="#7">Семь</a>
         </ul>
-      </nav>   
+      </nav>
     
       <div class="reg">
         <a href="#win1">Вход</a>
@@ -190,10 +192,67 @@
   </ul>
 </nav>
 
+<script type="text/javascript">
+  $('.slider1').mobilyslider({
+    transition: 'horizontal',
+    autoplay: true,
+    autoplaySpeed: 300,
+    pauseOnHover: true,
+    arrows: true,
+    animationSpeed: 300,
+    bullets: true,
+    arrowsHide: true
+  });
+  </script>
+
   <div class="container">
+  
+  <div class="slider slider1">
+    <div class="sliderContent">
+      <div class="item">
+        <a href="#img1"><img src="images/img1.jpg" width="960" alt=""></a>
+      </div>
+      <div class="item">
+        <a href="#img2"><img src="images/img2.jpg" width="960" alt=""></a>
+      </div>
+      <div class="item">
+        <a href="#img3"><img src="images/img3.jpg" width="960" alt=""></a>
+      </div>
+      <div class="item">
+        <a href="#img4"><img src="images/img4.jpg" width="960" alt=""></a>
+      </div>
+      <div class="item">
+        <a href="#img5"><img src="images/img5.jpg" width="960" alt=""></a>
+      </div>
+      <div class="item">
+        <a href="#img6"><img src="images/img6.jpg" width="960" alt=""></a>
+      </div>
+    </div>
+  </div>
+
+  <a href="#close" class="lightbox" id="img1">
+   <img src="images/img1.jpg">
+  </a>
+  <a href="#close" class="lightbox" id="img2">
+   <img src="images/img2.jpg">
+  </a>
+  <a href="#close" class="lightbox" id="img3">
+   <img src="images/img3.jpg">
+  </a>
+  <a href="#close" class="lightbox" id="img4">
+   <img src="images/img4.jpg">
+  </a>
+  <a href="#close" class="lightbox" id="img5">
+    <img src="images/img5.jpg">
+  </a>
+  <a href="#close" class="lightbox" id="img6">
+     <img src="images/img6.jpg">
+  </a>
+
     <div class="info">
       <div class="text">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" class="img-right" alt="Логотип HTML5">
+        <a href="#img7"><img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" class="img-right" alt="Логотип HTML5"></a>
+        <a href="#close" class="lightbox" id="img7"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"></a>
         <p>HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами; полученный в результате интерпретации форматированный текст отображается на экране монитора компьютера или мобильного устройства.</p>
         <p>Язык HTML до 5-й версии определялся как приложение SGML (стандартного обобщённого языка разметки по стандарту ISO 8879). Спецификации HTML5 формулируются в терминах DOM (объектной модели документа).</p>
         <p>Язык XHTML является более строгим вариантом HTML, он следует синтаксису XML и является приложением языка XML в области разметки гипертекста.</p>
@@ -203,7 +262,8 @@
       </div>
 
       <div class="text">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" class="img-right" alt="Логотип PHP">
+        <a href="#img8"><img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" class="img-right" alt="Логотип PHP"></a>
+        <a href="#close" class="lightbox" id="img8"><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"></a>
         <p>PHP (/pi:.eɪtʃ.pi:/ англ. PHP: Hypertext Preprocessor — «PHP: препроцессор гипертекста»; первоначально Personal Home Page Tools — «Инструменты для создания персональных веб-страниц») — скриптовый язык общего назначения, интенсивно применяемый для разработки веб-приложений. В настоящее время поддерживается подавляющим большинством хостинг-провайдеров и является одним из лидеров среди языков, применяющихся для создания динамических веб-сайтов.</p>
         <p>Язык и его интерпретатор (Zend Engine) разрабатываются группой энтузиастов в рамках проекта с открытым кодом. Проект распространяется под собственной лицензией, несовместимой с GNU GPL.</p>
 
@@ -248,7 +308,7 @@
             <i></i>
             <h2 class="title_block">Полноразмерная картинка</h2>
             <div class="msg">
-              <p><img src="https://cdn.pixabay.com/photo/2018/02/04/21/13/monastery-3130879_960_720.jpg" class="large-img">
+              <p><img src="images/img7.jpg" class="large-img">
               Встроенному изображению, размер которого 100% от родительского контейнера прописываем <strong>class="large-img"</strong>. Реальный размер картинки может быть большим чем секция аккордеона, но она легко впишется в блок аккордеона.</p>
             </div>
           </li>

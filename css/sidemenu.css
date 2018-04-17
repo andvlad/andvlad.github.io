@@ -7,6 +7,7 @@
     max-width: 100%;
     min-height: 0;
     display: block;
+    float: right;
 /* относительное позиционирование */
     position: relative;
     margin: 0 auto;
@@ -20,7 +21,6 @@
     font-weight: 300;
     font-family: 'Forum';
     letter-spacing: 1px;
-    display: block;
     margin: 0;
     padding: 10px 25px;
     cursor: pointer;
