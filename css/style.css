@@ -17,12 +17,37 @@
 @import url("vtip.css");
 @import url("poll.css");
 
+.wr {
+	display: grid;
+}
+header {
+	grid-area: header;
+}
+.main {
+	grid-area: main;
+}
+aside {
+	grid-area: sidebar;
+}
+.footer {
+	grid-area: footer;
+}
+.wr {
+	grid-template-columns: 5fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header"
+    "main sidebar"
+    "footer footer";
+}
 .top {
-	left: 0;
-	right: 0;
 	background: linear-gradient(to top, #344969, #34495E);
-	height: 20vh;
-	width: 100%;
+	height: auto;
+	position: relative;
+	width: 101.4%;
+	position: relative;
+	left: -1vw;
+	right: -1vw;
 }
 #toptext {
 	font: bold 8vh 'Alegreya Sans';
@@ -37,7 +62,11 @@
 	bottom: 0;
 	background: linear-gradient(to bottom, #344969, #34495E);
 	height: auto;
-	width: 100%;
+	width: 101.4%;
+	position: relative;
+	left: -1vw;
+	right: -1vw;
+	bottom: -1vw;
 }
 #bottomtext {
 	font: 2vh 'Forum';
@@ -198,6 +227,11 @@ color: white;
 .text p:not(:first-child) {
 	text-indent: 50px;
 }
+@media (max-width: 600px){
+  .sidebar {
+    float: none;
+  }
+
 #header{text-align:right; display:none;}
 #header{color:#ccc;}
 #header a{color:#fff;}
