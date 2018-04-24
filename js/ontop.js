@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
         var
         //скорость прокрутки к началу страницы
-        speed = 500,
+        speed = 400,
         //html-разметка кнопки
         $scrollTop = $('<a href="#" title="Быстро вернуться наверх" class="scrollTop"><i class="fa fa-angle-double-up"></i></a>').appendTo('body');        
         $scrollTop.click(function(e){

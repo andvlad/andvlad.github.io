@@ -16,6 +16,9 @@
 @import url("fileinput.css");
 @import url("vtip.css");
 @import url("poll.css");
+@import url("app/css/style.css");
+@import url("app/css/alertify.min.css");
+@import url("css/default.min.css");
 
 .wr {
 	display: grid;
@@ -202,8 +205,6 @@ color: white;
 .container > noindex > div {
     display: table-cell;
     vertical-align: top;
-    width: auto;
-    box-sizing: border-box;
 }
 .container > .slider,
 .container > noindex > .slider {

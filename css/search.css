@@ -12,7 +12,7 @@ input::-webkit-search-cancel-button {
     display: none; /* remove the search and cancel icon */
 }
 input[type=search] {
-    background: #ededed url(../images/search-icon.png) no-repeat 9px center;
+    background: #ededed url(../img/search-icon.png) no-repeat 9px center;
     border: solid 1px #ccc;
     padding: 9px 10px 9px 32px;
     width: 5vw;

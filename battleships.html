@@ -14,6 +14,7 @@
     <link rel="icon" href=​"img/favicon.png" type="image/png" sizes="32x32">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <script src="js/load.js"></script>
     <script src="js/mobilyslider.js"></script>
     <script src="js/init.js"></script>
     <script src="js/vtip.js"></script>
@@ -170,7 +171,7 @@
       <ul>
 
         <li>
-          <a href="battleships.html">Морской бой</a>
+          <a href="app/battleships.html">Морской бой</a>
         </li>
 
       </ul>   
@@ -196,79 +197,62 @@
   </script>
 
   <div class="container">
-  <div id="wrapper">
-  <div class="slider slider1">
-    <div class="sliderContent">
-      <div class="item">
-        <a href="#img1"><img src="img/img1.jpg" width="960" alt=""></a>
-      </div>
-      <div class="item">
-        <a href="#img2"><img src="img/img2.jpg" width="960" alt=""></a>
-      </div>
-      <div class="item">
-        <a href="#img3"><img src="img/img3.jpg" width="960" alt=""></a>
-      </div>
-      <div class="item">
-        <a href="#img4"><img src="img/img4.jpg" width="960" alt=""></a>
-      </div>
-      <div class="item">
-        <a href="#img5"><img src="img/img5.jpg" width="960" alt=""></a>
-      </div>
-      <div class="item">
-        <a href="#img6"><img src="img/img6.jpg" width="960" alt=""></a>
-      </div>
-    </div>
-  </div>
+    <div class="bs">
+  <!-- Окно ввода имени игрока -->
+      <script>
+         /*if (getCookie(username) === null || getCookie(username) === undefined) {
+            var username = prompt( 'Пожалуйста, назовите себя', 'Игрок' );
+            setCookie(username)
+         }
+         var username = prompt( 'Пожалуйста, назовите себя', 'Игрок' );
+         var st = '<p class="header">';*/
+      </script>
 
-  <a href="#close" class="lightbox" id="img1">
-   <img src="img/img1.jpg">
-  </a>
-  <a href="#close" class="lightbox" id="img2">
-   <img src="img/img2.jpg">
-  </a>
-  <a href="#close" class="lightbox" id="img3">
-   <img src="img/img3.jpg">
-  </a>
-  <a href="#close" class="lightbox" id="img4">
-   <img src="img/img4.jpg">
-  </a>
-  <a href="#close" class="lightbox" id="img5">
-    <img src="img/img5.jpg">
-  </a>
-  <a href="#close" class="lightbox" id="img6">
-     <img src="img/img6.jpg">
-  </a>
+      <div id='title'>Морской бой</div>
 
-    <div class="info">
+      <table>
 
-      <ul id="breadcrumbs-one">
-        <li><a href="">Code Practice</a></li>
-        <li><a href="">Скрипты</a></li>
-        <li><a href="">Меню и навигация</a></li>
-        <li><a href="" class="current">HTML</a></li>
-      </ul> 
+         <tr>
+            <!--  Подписи полей компьютера и игрока.
+                  Если игрок не ввел свое имя, показать имя по умолчанию-->
+            <td><p class='header'>Противник</p></td>
+            <td class="spacer" rowspan="3"></td>
+            <td id="name"><p class='header'>Игрок</p>
+               <!--<script>
+                  if ( username === null || username === '' || username=== undefined ) {
+                     document.getElementById("name").innerHTML = st + 'Игрок</p>';
+                  } else {
+                     document.getElementById("name").innerHTML = st + username + '</p>';}
+               </script>-->
+            </td>
+         </tr>
 
-      <div class="text">
-        <a href="#img7"><img class="img1 vtip" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" title="HTML5 logo" alt="Логотип HTML5"></a>
-        <a href="#close" class="lightbox" id="img7"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"></a>
-        <p>HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами; полученный в результате интерпретации форматированный текст отображается на экране монитора компьютера или мобильного устройства.</p>
-        <p>Язык HTML до 5-й версии определялся как приложение SGML (стандартного обобщённого языка разметки по стандарту ISO 8879). Спецификации HTML5 формулируются в терминах DOM (объектной модели документа).</p>
-        <p>Язык XHTML является более строгим вариантом HTML, он следует синтаксису XML и является приложением языка XML в области разметки гипертекста.</p>
-        <p>Во всемирной паутине HTML-страницы, как правило, передаются браузерам от сервера по протоколам HTTP или HTTPS, в виде простого текста или с использованием шифрования.</p>
-
-        <a class="ref vtip" href="https://ru.wikipedia.org/wiki/HTML" title="HTML - Wikipedia">Wikipedia</a>
-      </div>
-
-      <div class="text">
-        <a href="#img8"><img class="img1 vtip" src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" title="PHP logo" alt="Логотип PHP"></a>
-        <a href="#close" class="lightbox" id="img8"><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"></a>
-        <p>PHP (/pi:.eɪtʃ.pi:/ англ. PHP: Hypertext Preprocessor — «PHP: препроцессор гипертекста»; первоначально Personal Home Page Tools — «Инструменты для создания персональных веб-страниц») — скриптовый язык общего назначения, интенсивно применяемый для разработки веб-приложений. В настоящее время поддерживается подавляющим большинством хостинг-провайдеров и является одним из лидеров среди языков, применяющихся для создания динамических веб-сайтов.</p>
-        <p>Язык и его интерпретатор (Zend Engine) разрабатываются группой энтузиастов в рамках проекта с открытым кодом. Проект распространяется под собственной лицензией, несовместимой с GNU GPL.</p>
-
-        <a class="ref vtip" href="https://ru.wikipedia.org/wiki/CSS" title="PHP - Wikipedia">Wikipedia</a>
-      </div>
-    </div>
-  </div>
+         <tr>
+            <!-- Поле компьютера -->
+            <td class='bf'>
+               <script>
+                  showGrid(true);
+               </script>
+            </td>
+            <!-- Поле игрока -->
+            <td class='bf'>
+               <script>
+                  showGrid(false);
+               </script>
+            </td>
+         </tr>
+      </table>
+      <!-- Поле вывода интерактивных сообщений -->
+      <input type="text" id="messenger" alt="" />
+      <!-- Сообщение по умолчанию -->
+      <script>
+         document.getElementById('messenger').value = " Добро пожаловать в игру ";
+      </script>
+      <!-- Поле с коротким описанием -->
+      <div id="info"><p>Стреляйте, кликая по клеткам поля противника.</p><p>Потопите все корабли противника прежде, чем он потопит Ваши.</p><br /><br /></div>
+      <!-- Кнопка начала новой игры -->
+      <button onClick="Javascript:resetGame()" id="button">Новая игра</button>
+   </div>
 
     <div class="sidebar">
 

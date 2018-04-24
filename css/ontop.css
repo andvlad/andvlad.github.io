@@ -52,7 +52,7 @@
     opacity: 0;
 }
  
-/* определяем имя, тип и скорость анимации лля :before */
+/* определяем имя, тип и скорость анимации для :before */
 .scrollTop:before {
     background-color: #736cad;
     -webkit-animation: clickMe 1.8s 333ms infinite ease-out;
@@ -73,7 +73,7 @@
     height: 30px;
     display: block;
     background: rgba(28, 144, 243, 0.61);
-    color: #fff;
+    color: #776DCC;
     text-align: center;
     line-height: 30px;
     font-size: 1.3rem;

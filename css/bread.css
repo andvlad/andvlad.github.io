@@ -16,7 +16,7 @@ ul[id="breadcrumbs-one"]{
       box-shadow: 0 0 2px rgba(0,0,0,.2);
       /* Clear floats */
       overflow: hidden;
-      width: 60%;
+      width: 40vw;
     }
     
     #breadcrumbs-one li{
